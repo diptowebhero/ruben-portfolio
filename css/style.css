@@ -253,7 +253,7 @@ a {
     height: 100%;
   }
   .youtube_video {
-    width: 400px;
+    /* width: 400px; */
     height: 300px;
     margin: auto;
   }
