@@ -1,0 +1,171 @@
+:root {
+  --yellow-color: #d9b311;
+  --light-blue: #0080a7;
+  --medium-color: #ccc;
+  --dark-blue: #00111e;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* navbar css start */
+.header_area {
+  background: #333 url("../assets/img/header-images/ruben123-hero-img_02.jpg")
+    no-repeat center/cover;
+  height: 95vh;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.header_area .logo {
+  width: 70px;
+  height: 70px;
+}
+.navbar .nav-links a {
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 1s;
+}
+.navbar .nav-links a:hover {
+  border-color: var(--light-blue);
+}
+.navbar .nav-links .active {
+  border-color: var(--yellow-color);
+}
+
+.mobile_menu {
+  width: 70px;
+  height: 70px;
+  background-color: var(--light-blue);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile_menu.active {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px !important;
+  display: block !important;
+}
+.mobile_menu.active .fa-bars {
+  display: none !important;
+}
+.mobile_menu .fa-bars {
+  display: flex !important;
+}
+.mobile_menu.active .fa-times {
+  display: flex !important;
+}
+.mobile_menu.active i {
+  padding: 20px;
+  text-align: end;
+}
+.mobile_menu.active .icon {
+  text-align: end;
+}
+.mobile_menu .menu_list {
+  display: none;
+}
+.mobile_menu.active .menu_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 50px;
+  transition: all 1.5s ease-in-out !important;
+}
+.mobile_menu.active .menu_list li {
+  padding: 10px 0px;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+.mobile_menu.active .menu_list li a {
+  color: white;
+}
+.mobile_menu.active .menu_list li a:hover {
+  color: cyan;
+}
+/* navbar css end */
+
+/* hero css start */
+.hero_area {
+  margin-top: 2rem;
+}
+.hero_area h1 {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.hero_area h2 {
+  font-size: 1.8rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.hero_area .img_desktop {
+  width: 1200px;
+  margin-top: -5rem;
+  margin-bottom: -4rem;
+}
+.hero_area .img_mobile {
+  margin-top: -2rem;
+  margin-bottom: -1rem;
+  width: 475px !important;
+  z-index: 0;
+}
+.header_area .work_button {
+  width: 180px;
+  height: 50px;
+  color: white;
+  background-color: rgba(0, 95, 86, 0.3);
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s ease;
+}
+.header_area .work_button:hover {
+  background-color: var(--yellow-color);
+}
+#particles-js {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 1 !important;
+}
+@media (max-width: 768px) {
+  .hero_area .img_desktop {
+    display: none;
+  }
+  .hero_area .img_mobile {
+    display: block !important;
+    width: 100%;
+  }
+  .hero_area h2 {
+    font-size: 1rem;
+  }
+}
+/* hero css end */
