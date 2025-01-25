@@ -306,6 +306,37 @@ a {
 }
 /* capabilities css end */
 
+/* skills section css start */
+.skills_section {
+  background-color: #0080a7;
+  margin-top: 66px;
+}
+.skills_section:before,
+.skills_section:after {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.skills_section:before {
+  top: 0;
+  transform: skewY(3deg);
+  transform-origin: 100% 0;
+}
+.skills_section:after {
+  bottom: 0;
+  transform: skewY(3deg);
+  transform-origin: 0 100%;
+}
+.skills_section .skill-item {
+  font-size: 1rem;
+}
+/* skills section css end */
+
 /* responsive css */
 @media (max-width: 768px) {
   .hero_area .img_desktop {
@@ -336,5 +367,8 @@ a {
   .youtube_video iframe {
     width: 100%;
     height: 100%;
+  }
+  .skills_section {
+    margin-top: 20px;
   }
 }
