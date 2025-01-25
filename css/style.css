@@ -202,6 +202,11 @@ a {
   transform: skewY(-3deg);
   transform-origin: 0 100%;
 }
+.news_section::after {
+  bottom: 0;
+  transform: skewY(3deg);
+  transform-origin: 0 100%;
+}
 
 .news_section:before,
 .news_section:after {
@@ -228,8 +233,78 @@ a {
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
+.youtube_video {
+  margin-bottom: 6rem;
+}
 
 /* news section css end */
+
+/* capabilities css start */
+.capabilities_section {
+  background-color: #00111e;
+  z-index: 9;
+}
+.capabilities_section:before,
+.capabilities_section:after {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  padding-bottom: 2rem;
+}
+.capabilities_section::before {
+  position: absolute;
+  top: 0;
+  transform: skewY(-3deg);
+  transform-origin: 0 100%;
+}
+.capabilities_section::after {
+  position: absolute;
+  bottom: 0;
+  transform: skewY(3deg);
+  transform-origin: 0 100%;
+}
+.capabilities_section h2 {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  color: white;
+}
+.capabilities_section p {
+  font-size: 1rem;
+}
+.capabilities_card {
+  text-align: center;
+}
+.capabilities_card .content img {
+  height: 12rem;
+  margin: auto;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  opacity: 0.4;
+  transition: 0.75s;
+}
+.capabilities_card .content h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding-top: 4rem;
+}
+.capabilities_card:hover .content img {
+  opacity: 1;
+}
+.capabilities_card .content .text-animation {
+  transition-duration: 0.75s;
+}
+.capabilities_card:hover .content .text-animation {
+  transform: translateY(-2rem);
+}
+/* capabilities css end */
 
 /* responsive css */
 @media (max-width: 768px) {
@@ -256,6 +331,7 @@ a {
     /* width: 400px; */
     height: 300px;
     margin: auto;
+    padding-bottom: 50px;
   }
   .youtube_video iframe {
     width: 100%;
