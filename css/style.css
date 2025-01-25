@@ -489,4 +489,7 @@ span {
   span {
     font-size: 1rem;
   }
+  .modal-dialog {
+    width: auto;
+  }
 }
