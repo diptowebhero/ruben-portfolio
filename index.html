@@ -2,30 +2,33 @@
 <html lang="en">
 
 <head>
-    <!-- Metadata for character encoding and responsive design -->
+    <!-- Character encoding and viewport settings for responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Title of the webpage -->
-    <title>Ruben Esquivel | Graphic Designer | Web / UI Designer | Web Developer</title>
+    <!-- Webpage title -->
+    <title>Ruben Esquivel | Graphic Designer | UI/UX Designer | Web Developer</title>
 
-    <!-- Favicon for the webpage -->
+    <!-- Favicon -->
     <link rel="icon" href="./assets/img/RE-LOGO_Favicon_01.png" type="image/png" sizes="16x16">
 
-    <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-dyBseN03a1+lWX2N5u0+/FAFKSdcsniChItcxxtvU/s+V40YjO7Po4NUjA84L9EH" crossorigin="anonymous">
 
-    <!-- Google Fonts for custom typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,900;1,400&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS CDN for styling and layout -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom stylesheet link -->
+    <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -261,516 +264,1622 @@
     <!-- begin: portfolio area -->
     <section id="portfolio-section" class="portfolio_section position-relative py-5">
         <div class="container">
-            <!-- Tabs -->
-            <ul class="nav nav-tabs d-flex justify-content-center" id="tabs">
-                <li class="nav-item">
-                    <button class="nav-link active" data-bs-target="#all" data-bs-toggle="tab">All</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-bs-target="#web-design" data-bs-toggle="tab">Web Design</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-bs-target="#graphic-design" data-bs-toggle="tab">Graphic
-                        Design</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-bs-target="#web-development" data-bs-toggle="tab">Web
-                        Development</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-bs-target="#ui-ux" data-bs-toggle="tab">UI/UX Design</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-bs-target="#html-email" data-bs-toggle="tab">html email</button>
-                </li>
-            </ul>
+            <!-- begin: Tabs -->
+            <div class="filters filter-button-group w-100 text-center">
+                <ul>
+                    <h4>
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".graphics">Graphic Design</li>
+                        <li data-filter=".webdesign">Web Design</li>
+                        <li data-filter=".webdev">Web Development</li>
+                        <li data-filter=".ui-ux">UI / UX Design</li>
+                        <li data-filter=".html-email">HTML Emails</li>
+                    </h4>
+                </ul>
+            </div>
+            <!-- end: Tabs -->
 
-            <!-- Tab Content -->
-            <div class="tab-content mt-3">
-                <!-- All item tabs -->
-                <div class="tab-pane fade show active" id="all">
-                    <div class="row image-gallery">
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/ruben123_Web-Design_01.jpg"
-                                alt="Portfolio 1" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 1" data-description="For this website, I wanted to use my design skills along with web development skills to make this website
-                          really pop. So I took a photo that was taken of me of my nephew at a recent vacation to Yellow Stone and
-                          added some photo retouching along with photo manipulation and created the graphics for the Portfolio to
-                          this photo. Once this was done I then used the final image for the web design. Once the web design was
-                          done then I converted the .psd to this website. I honestly believe knowing design with web development is
-                          the perfect combination to create beautiful websites.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/website_banner_header_500x500_01.jpg"
-                                alt="Portfolio 2" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 2"
-                                data-description="I still like working on freelance projects for both design and coding. So I created these banners to sell etsy and I design website banners for other companies as well so I created this design / ad to promote my services with banners I designed. So anyone who is visiting this website needs a website banner design feel free to message me.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/ui-ux/cujo-cookies_ui-ux-design.jpg"
-                                alt="Portfolio 4" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="For this UI / UX design I used Adobe XD to create the wireframe, ui design, and setting up the prototype.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/html-emails/apple-watch_html-email_01.jpg"
-                                alt="Portfolio 5" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="First I designed this HTML email with Photoshop and then converted the psd to an HTML email with tables only.
-                          If needed for a job position feel free to ask me for the psd file and I can send the file. HTML emails are pretty easy especially if you already built websites with html  and css the only difference is using tables and inline styling (putting the css inside the html).">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/top-star-websites_1000x1000_Web-Design_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="I created this website to get some freelance projects to work on every now and then. I first designed this website with photoshop and then I
-                          converted the psd into a website with html, Sass, Bootstrap, and a little of javascript. Personally I think it is a good idea for all developers to do some freelance because it teaches you other important
-                        skills outside of coding such as marketing, deisgn, project management, and dealing with customers.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/meta_500x500_Web-Design_01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="I designed this landing page for desktop and mobile using Photoshop. Once the web design was completed I then converted the psd to pixel perfect website with just html / css and bootstrap 4. Feel free to email me if you want see the full design layout for desktop and mobile.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/paw-lovers-pickup_1000x1000_Web-Design_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="This is a dog website I created for one of my customers. To be honest to save time I purchased a html / css website template from a market place to save time. I updated the image on the header and updated the icons and images. I also updated the code to make sure everything is mobile responsive.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Bob-Furniture-Car-Cover_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/pbt-king_1000x1000_Web-Design_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="For this website I used a Woocommerce theme to sell photo booth
-                          templates. Before updating the theme I created the web deisgn
-                          layout first Photoshop. Then I updated the theme with custom graphics I created and
-                          uploaded the products I created. I designed the logo, header, buttons, and products in photoshop.
-                          I also created a custom email
-                          sign up form in html css where I give away 5 free templates to
-                          collect emails.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco_01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/car_web_banners_designs_Web-Design_01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="I designed these web banners for a car dealership company. All I was given for this assignment was a png photo of the car and a word document for the text needed on the design. ">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco-AFTER_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/quality-improvements_1000x1000_Web-Design_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="I designed this landing page for desktop and mobile using Photoshop. Once the web design was completed I then converted the psd to pixel perfect website with just html / css and bootstrap 4. Feel free to email me if you want see the full design layout for desktop and mobile.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/farmer-boys-full-size-flags_01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/FARMER-BOYS_PRODUCT-SHEET_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-retouching/combine-photos_2048x2048_button_03.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/quiznos-full-size-flags-AFTER_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/meineke-store-before-after-portfolio-image.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/RACE-CAR-01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/STA-TENT_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/ufc-fitness-center-full-size-flags_01.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/360-ALARM_LOGO_01.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Taco-Cabana-Cup-Inflatable_02.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/green-life-logo-portfolio-image.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Photo-Booth-Template-King-Logo-BEFORE-AFTER.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Skid_Steer-Services_02.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/60th-birthday_Website-Button-Both.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/photo-template-360-portfolio-image.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Aaliyah-18-Birthday_Website-Button-Both.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Christmas-Ginger-bread_Website-Button-Both.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/ruben-portfolio_1000x1000_Web-Design_02.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/RED-CARPET_1000x1000_Web-Design_02.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="For this website I created the ui / web design in photoshop. Once I was done with the design I converted
-                          the psd into pixel perfect website using html css & javascript. This was the first website I coded from
-                          scratch without using any themes. Unfortunately the customer never got around to updating his hosting so I
-                          uploaded this website on a personal domain for now.">
-                        </div>
-                    </div>
-                </div>
-                <!-- web-design item tabs -->
-                <div class="tab-pane fade" id="web-design">
-                    <div class="row image-gallery">
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/ruben123_Web-Design_01.jpg"
-                                alt="Portfolio 1" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 1" data-description="For this website, I wanted to use my design skills along with web development skills to make this website
-                                          really pop. So I took a photo that was taken of me of my nephew at a recent vacation to Yellow Stone and
-                                          added some photo retouching along with photo manipulation and created the graphics for the Portfolio to
-                                          this photo. Once this was done I then used the final image for the web design. Once the web design was
-                                          done then I converted the .psd to this website. I honestly believe knowing design with web development is
-                                          the perfect combination to create beautiful websites.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/website_banner_header_500x500_01.jpg"
-                                alt="Portfolio 2" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 2"
-                                data-description="I still like working on freelance projects for both design and coding. So I created these banners to sell etsy and I design website banners for other companies as well so I created this design / ad to promote my services with banners I designed. So anyone who is visiting this website needs a website banner design feel free to message me.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/ui-ux/cujo-cookies_ui-ux-design.jpg"
-                                alt="Portfolio 4" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="For this UI / UX design I used Adobe XD to create the wireframe, ui design, and setting up the prototype.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/html-emails/apple-watch_html-email_01.jpg"
-                                alt="Portfolio 5" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="First I designed this HTML email with Photoshop and then converted the psd to an HTML email with tables only.
-                                          If needed for a job position feel free to ask me for the psd file and I can send the file. HTML emails are pretty easy especially if you already built websites with html  and css the only difference is using tables and inline styling (putting the css inside the html).">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/top-star-websites_1000x1000_Web-Design_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="I created this website to get some freelance projects to work on every now and then. I first designed this website with photoshop and then I
-                                          converted the psd into a website with html, Sass, Bootstrap, and a little of javascript. Personally I think it is a good idea for all developers to do some freelance because it teaches you other important
-                                        skills outside of coding such as marketing, deisgn, project management, and dealing with customers.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/meta_500x500_Web-Design_01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="I designed this landing page for desktop and mobile using Photoshop. Once the web design was completed I then converted the psd to pixel perfect website with just html / css and bootstrap 4. Feel free to email me if you want see the full design layout for desktop and mobile.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/paw-lovers-pickup_1000x1000_Web-Design_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="This is a dog website I created for one of my customers. To be honest to save time I purchased a html / css website template from a market place to save time. I updated the image on the header and updated the icons and images. I also updated the code to make sure everything is mobile responsive.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Bob-Furniture-Car-Cover_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/car_web_banners_designs_Web-Design_01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="I designed these web banners for a car dealership company. All I was given for this assignment was a png photo of the car and a word document for the text needed on the design. ">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/ruben-portfolio_1000x1000_Web-Design_02.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/RED-CARPET_1000x1000_Web-Design_02.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="For this website I created the ui / web design in photoshop. Once I was done with the design I converted
-                                          the psd into pixel perfect website using html css & javascript. This was the first website I coded from
-                                          scratch without using any themes. Unfortunately the customer never got around to updating his hosting so I
-                                          uploaded this website on a personal domain for now.">
-                        </div>
-                    </div>
-                </div>
-                <!-- graphic-design item tabs -->
-                <div class="tab-pane fade" id="graphic-design">
-                    <div class="row image-gallery">
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/ruben123_Web-Design_01.jpg"
-                                alt="Portfolio 1" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 1" data-description="For this website, I wanted to use my design skills along with web development skills to make this website
-                                      really pop. So I took a photo that was taken of me of my nephew at a recent vacation to Yellow Stone and
-                                      added some photo retouching along with photo manipulation and created the graphics for the Portfolio to
-                                      this photo. Once this was done I then used the final image for the web design. Once the web design was
-                                      done then I converted the .psd to this website. I honestly believe knowing design with web development is
-                                      the perfect combination to create beautiful websites.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/website_banner_header_500x500_01.jpg"
-                                alt="Portfolio 2" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 2"
-                                data-description="I still like working on freelance projects for both design and coding. So I created these banners to sell etsy and I design website banners for other companies as well so I created this design / ad to promote my services with banners I designed. So anyone who is visiting this website needs a website banner design feel free to message me.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Bob-Furniture-Car-Cover_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/pbt-king_1000x1000_Web-Design_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="For this website I used a Woocommerce theme to sell photo booth
-                                      templates. Before updating the theme I created the web deisgn
-                                      layout first Photoshop. Then I updated the theme with custom graphics I created and
-                                      uploaded the products I created. I designed the logo, header, buttons, and products in photoshop.
-                                      I also created a custom email
-                                      sign up form in html css where I give away 5 free templates to
-                                      collect emails.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco-AFTER_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco_01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/car_web_banners_designs_Web-Design_01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="I designed these web banners for a car dealership company. All I was given for this assignment was a png photo of the car and a word document for the text needed on the design. ">
-                        </div>
+            <!-- begin: Tab Content -->
+            <div class="content grid my-0 mx-auto p-0 text-center">
 
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/farmer-boys-full-size-flags_01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/FARMER-BOYS_PRODUCT-SHEET_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-retouching/combine-photos_2048x2048_button_03.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/quiznos-full-size-flags-AFTER_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/meineke-store-before-after-portfolio-image.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/RACE-CAR-01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/STA-TENT_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/ufc-fitness-center-full-size-flags_01.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/360-ALARM_LOGO_01.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Taco-Cabana-Cup-Inflatable_02.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/green-life-logo-portfolio-image.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Photo-Booth-Template-King-Logo-BEFORE-AFTER.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Skid_Steer-Services_02.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/60th-birthday_Website-Button-Both.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/photo-template-360-portfolio-image.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Aaliyah-18-Birthday_Website-Button-Both.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Christmas-Ginger-bread_Website-Button-Both.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
+                <!-- =======***PORTFOLIO ITEM 01=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign graphics grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img01">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img01">
+                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/ruben123_Web-Design_01.jpg" />
+                        </a>
                     </div>
-                </div>
-                <!-- web-development item tabs -->
-                <div class="tab-pane fade" id="web-development">
-                    <div class="row image-gallery">
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/meta_500x500_Web-Design_01.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="I designed this landing page for desktop and mobile using Photoshop. Once the web design was completed I then converted the psd to pixel perfect website with just html / css and bootstrap 4. Feel free to email me if you want see the full design layout for desktop and mobile.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/ui-ux/cujo-cookies_ui-ux-design.jpg"
-                                alt="Portfolio 4" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="For this UI / UX design I used Adobe XD to create the wireframe, ui design, and setting up the prototype.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/html-emails/apple-watch_html-email_01.jpg"
-                                alt="Portfolio 5" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="First I designed this HTML email with Photoshop and then converted the psd to an HTML email with tables only.
-                                                          If needed for a job position feel free to ask me for the psd file and I can send the file. HTML emails are pretty easy especially if you already built websites with html  and css the only difference is using tables and inline styling (putting the css inside the html).">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/top-star-websites_1000x1000_Web-Design_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="I created this website to get some freelance projects to work on every now and then. I first designed this website with photoshop and then I
-                                                          converted the psd into a website with html, Sass, Bootstrap, and a little of javascript. Personally I think it is a good idea for all developers to do some freelance because it teaches you other important
-                                                        skills outside of coding such as marketing, deisgn, project management, and dealing with customers.">
-                        </div>
 
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/paw-lovers-pickup_1000x1000_Web-Design_02.jpg"
-                                alt="Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="This is a dog website I created for one of my customers. To be honest to save time I purchased a html / css website template from a market place to save time. I updated the image on the header and updated the icons and images. I also updated the code to make sure everything is mobile responsive.">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/ruben-portfolio_1000x1000_Web-Design_02.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/RED-CARPET_1000x1000_Web-Design_02.jpg"
-                                alt=" Portfolio 3" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3" data-description="For this website I created the ui / web design in photoshop. Once I was done with the design I converted
-                                                          the psd into pixel perfect website using html css & javascript. This was the first website I coded from
-                                                          scratch without using any themes. Unfortunately the customer never got around to updating his hosting so I
-                                                          uploaded this website on a personal domain for now.">
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img01" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web-design/ruben123_Web-Design_01.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        For this website, I wanted to use my design skills along with web development
+                                        skills
+                                        to
+                                        make this website really pop. So I took a photo that was taken of me of my
+                                        nephew at
+                                        a recent
+                                        vacation to Yellow Stone and added some photo retouching along with photo
+                                        manipulation and
+                                        created the graphics for the "Portfolio" to this photo. Once this was done I
+                                        then
+                                        used the final
+                                        image for the web design. Once the web design was done then I converted the .psd
+                                        to
+                                        this
+                                        website. I honestly believe knowing design with web development is the perfect
+                                        combination to
+                                        create beautiful websites.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- ui-ux item tabs -->
-                <div class="tab-pane fade" id="ui-ux">
-                    <div class="row image-gallery">
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/ui-ux/cujo-cookies_ui-ux-design.jpg"
-                                alt="Portfolio 4" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="For this UI / UX design I used Adobe XD to create the wireframe, ui design, and setting up the prototype.">
+                <!-- =======***END PORTFOLIO ITEM 01***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 02=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign graphics grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img02">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img01">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/web-design/website_banner_header_500x500_01.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img02" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web-design/website_banner_header_500x500_01.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        I still like working on freelance projects for both design and coding. So I
+                                        created these banners to sell etsy and I
+                                        design website banners for other companies as well so I created this design / ad
+                                        to promote my services with banners I
+                                        designed. So anyone who is visiting this website needs a website banner design
+                                        feel free to message me.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- html-email item tabs -->
-                <div class="tab-pane fade" id="html-email">
-                    <div class="row image-gallery">
-                        <div class="col-md-3 mb-3">
-                            <img src="./assets/img/ruben-123-Portfolio-img/html-emails/apple-watch_html-email_01.jpg"
-                                alt="Portfolio 5" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                data-title="Portfolio 3"
-                                data-description="First I designed this HTML email with Photoshop and then converted the psd to an HTML email with tables only.
-                                              If needed for a job position feel free to ask me for the psd file and I can send the file. HTML emails are pretty easy especially if you already built websites with html  and css the only difference is using tables and inline styling (putting the css inside the html).">
+                <!-- =======***END PORTFOLIO ITEM 02***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 03=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign ui-ux grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img03">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img03">
+                            <img src="./assets/img/ruben-123-Portfolio-img/ui-ux/cujo-cookies_ui-ux-design.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img03" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/ui-ux/cujo-cookies_ui-ux-design.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="http://ruben123.com/meta/" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        For this UI / UX design I used Adobe XD to create the wireframe, ui design, and
+                                        setting up the prototype.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- =======***END PORTFOLIO ITEM 03***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 04=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign html-email grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img04">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img04">
+                            <img src="./assets/img/ruben-123-Portfolio-img/html-emails/apple-watch_html-email_01.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img04" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/html-emails/apple-watch_html-email_01.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <div>
+                                        <a href="https://ruben123.com/apple-watch-email/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div>
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        First I designed this HTML email with Photoshop and then converted the psd to an
+                                        HTML email with tables only.
+                                        If needed for a job position feel free to ask me for the psd file and I can send
+                                        the file. HTML emails are pretty easy
+                                        especially if you already built websites with html and css the only difference
+                                        is using tables and inline styling
+                                        (putting the css inside the html).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 04***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 05=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img05">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img05">
+                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/meta_500x500_Web-Design_01.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img05" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web-design/meta_500x500_Web-Design_01.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <div>
+                                        <a href="http://ruben123.com/meta/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div>
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        I designed this landing page for desktop and mobile using Photoshop. Once the
+                                        web design was completed I then converted
+                                        the psd to pixel perfect website with just html / css and bootstrap 4. Feel free
+                                        to email me if you want see the full
+                                        design layout for desktop and mobile.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 05***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 06=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img06">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img06">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/web-design/top-star-websites_1000x1000_Web-Design_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img06" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web-design/top-star-websites_1000x1000_Web-Design_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <div>
+                                        <a href="https://topstarwebsites.com/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div>
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        I created this website to get some freelance projects to work on every now and
+                                        then. I first designed this website with
+                                        photoshop and then I
+                                        converted the psd into a website with html, Sass, Bootstrap, and a little of
+                                        javascript. <br></br> Personally I think it
+                                        is a good idea for all developers to do some freelance because it teaches you
+                                        other important skills outside of coding
+                                        such as marketing, deisgn, project management, and dealing with customers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 06***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 07=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img07">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img07">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/web-design/paw-lovers-pickup_1000x1000_Web-Design_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img07" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web-design/paw-lovers-pickup_1000x1000_Web-Design_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div>
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 07***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 08=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img09">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img09">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/web-design/pbt-king_1000x1000_Web-Design_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img09" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web-design/pbt-king_1000x1000_Web-Design_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <div>
+                                        <a href="https://photoboothtemplateking.com/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div>
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        For this website I used a Woocommerce theme to sell photo booth
+                                        templates. Before updating the theme I created the web deisgn
+                                        layout first Photoshop. Then I updated the theme with custom graphics I created
+                                        and
+                                        uploaded the products I created.
+                                        <br></br>
+                                        I designed the logo, header, buttons, and products in photoshop.
+                                        I also created a custom email
+                                        sign up form in html css where I give away 5 free templates to
+                                        collect emails.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 08***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 09=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img08">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img08">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Bob-Furniture-Car-Cover_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img08" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Bob-Furniture-Car-Cover_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 09***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 10=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img10">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img10">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/web-design/quality-improvements_1000x1000_Web-Design_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img10" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web-design/quality-improvements_1000x1000_Web-Design_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <div>
+                                        <a href="http://qualitymulching.com/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div>
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        I built this website for a mulching company. Origianlly I built this website
+                                        with a wordpress theme but
+                                        after it was built I felt like the website was loading up a little bit slow and
+                                        we were having database
+                                        issues. So I then rebuilt this website using only html css and vanilla
+                                        javascript.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 10***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 11=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdev grid-item" data-bs-toggle="modal" data-bs-target="#img12">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img11">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/web-design/car_web_banners_designs_Web-Design_01.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img12" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web-design/car_web_banners_designs_Web-Design_01.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        I designed these web banners for a car dealership company. All I was given for
+                                        this assignment was a png
+                                        photo of the car and a word document for the text needed on the design.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 11***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 12=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign grid-item" data-bs-toggle="modal" data-bs-target="#img12">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img12">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco_01.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img12" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco_01.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 12***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 13=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img13">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img13">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco-AFTER_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img13" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco-AFTER_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 13***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 14=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img14">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img14">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/farmer-boys-full-size-flags_01.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img14" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/farmer-boys-full-size-flags_01.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 14***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 15=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img15">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img15">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/FARMER-BOYS_PRODUCT-SHEET_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img15" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/FARMER-BOYS_PRODUCT-SHEET_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 15***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 16=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img16">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img16">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/meineke-store-before-after-portfolio-image.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img16" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/meineke-store-before-after-portfolio-image.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 16***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 17=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img17">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img17">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-retouching/combine-photos_2048x2048_button_03.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img17" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-retouching/combine-photos_2048x2048_button_03.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 17***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 18=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img18">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img18">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/quiznos-full-size-flags-AFTER_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img18" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/quiznos-full-size-flags-AFTER_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 18***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 19=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img19">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img19">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/RACE-CAR-01.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img19" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/RACE-CAR-01.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 19***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 20=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img20">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img20">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/STA-TENT_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img20" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/STA-TENT_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 20***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 21=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img21">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img21">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Taco-Cabana-Cup-Inflatable_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img21" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Taco-Cabana-Cup-Inflatable_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 21***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 22=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img22">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img22">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/ufc-fitness-center-full-size-flags_01.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img22" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/ufc-fitness-center-full-size-flags_01.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 22***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 23=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img23">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img23">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/360-ALARM_LOGO_01.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img23" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/360-ALARM_LOGO_01.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 23***======= -->
+                <!-- =======***PORTFOLIO ITEM 24=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img24">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img24">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/green-life-logo-portfolio-image.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img24" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/green-life-logo-portfolio-image.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 24***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 25=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img25">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img25">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Photo-Booth-Template-King-Logo-BEFORE-AFTER.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img25" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Photo-Booth-Template-King-Logo-BEFORE-AFTER.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 25***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 26=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img26">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img26">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/photo-template-360-portfolio-image.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img26" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/photo-template-360-portfolio-image.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 26***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 27=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img27">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img27">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Skid_Steer-Services_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img27" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Skid_Steer-Services_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 27***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 28=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img28">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img28">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/60th-birthday_Website-Button-Both.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img28" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/60th-birthday_Website-Button-Both.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 28***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 29=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img29">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img29">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Aaliyah-18-Birthday_Website-Button-Both.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img29" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Aaliyah-18-Birthday_Website-Button-Both.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 29***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 30=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img30">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img30">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Christmas-Ginger-bread_Website-Button-Both.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img30" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Christmas-Ginger-bread_Website-Button-Both.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <!-- <div>
+                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div> -->
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        This is a dog website I created for one of my customers. To be honest to save
+                                        time I purchased a html / css website
+                                        template from a market place to save time. I updated the image on the header and
+                                        updated the icons and images. I also
+                                        updated the code to make sure everything is mobile responsive.
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 30***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 31=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img31">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img31">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/web-design/RED-CARPET_1000x1000_Web-Design_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img31" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web-design/RED-CARPET_1000x1000_Web-Design_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <div>
+                                        <a href="http://lonestarwebandgraphics.com/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div>
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        For this website I created the ui / web design in photoshop. Once I was done
+                                        with the design I converted
+                                        the psd into pixel perfect website using html css & javascript. This was the
+                                        first website I coded from
+                                        scratch without using any themes. Unfortunately the customer never got around to
+                                        updating his hosting so I
+                                        uploaded this website on a personal domain for now.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 31***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 32=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img32">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img32">
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/web-design/ruben-portfolio_1000x1000_Web-Design_02.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img32" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web-design/ruben-portfolio_1000x1000_Web-Design_02.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <div>
+                                        <a href="http://lonestarwebandgraphics.com/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                                Website</button></a>
+                                    </div>
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        For this website I designed the ui / web deisgn in Photoshop. Once I was done
+                                        designing the website I
+                                        converted the psd into a website with html css javascript and a jquery librairy
+                                        for portfolio filter.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 32***======= -->
+
 
             </div>
+
+            <!-- end: Tab Content -->
+
         </div>
     </section>
     <!-- end: portfolio area -->
@@ -796,21 +1905,6 @@
     </footer>
     <!-- end: footer area -->
 
-    <!-- portfolio modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <img id="modalImage" src="" alt="Modal Image" class="img-fluid mb-3">
-                    <p id="imageDescription"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <!-- PARTICLES CDN -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -821,7 +1915,11 @@
         });
 
     </script>
+
+    <!-- main js link -->
     <script src="./js/main.js"></script>
+    <!-- Jquery Portfolio CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,61 @@
+/* responsive css */
+
+@media (max-width: 768px) {
+  .hero_area .img_desktop {
+    display: none;
+  }
+  .hero_area .img_mobile {
+    display: block !important;
+    width: 100%;
+  }
+  .hero_area h2 {
+    font-size: 1rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 2rem;
+  }
+  .about_img img {
+    width: 100%;
+    height: 100%;
+  }
+  .youtube_video {
+    /* width: 400px; */
+    height: 300px;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  .youtube_video iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .skills_section {
+    margin-top: 20px;
+  }
+
+  .image-gallery {
+    text-align: center;
+  }
+  .footer_area .contact_info h3 {
+    font-size: 1.525rem;
+  }
+  .footer_area .contact_info p,
+  span {
+    font-size: 1rem;
+  }
+  .portfolio_section .modal-dialog {
+    width: auto !important;
+  }
+
+  .portfolio_section .filters ul li {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio_section .content .single-content {
+    width: auto;
+    margin: 12px;
+  }
+}
