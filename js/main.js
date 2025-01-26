@@ -1,3 +1,6 @@
+const menuIcon = document.getElementById("menuIcon");
+const closeBtn = document.getElementById("closeBtn");
+const mobileMenu = document.getElementById("mobile_menu");
 $(window).on("load", function () {
   $(".grid").isotope({
     itemSelector: ".grid-item",
@@ -14,10 +17,6 @@ $(window).on("load", function () {
     $(this).addClass("active");
   });
 });
-
-const menuIcon = document.getElementById("menuIcon");
-const closeBtn = document.getElementById("closeBtn");
-const mobileMenu = document.getElementById("mobile_menu");
 
 // Show the menu
 menuIcon.addEventListener("click", () => {
