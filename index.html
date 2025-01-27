@@ -139,6 +139,7 @@
     <!-- end: about me area -->
 
     <!-- begin: news area -->
+    <!--
     <section id="news" class="news_section position-relative">
         <div class="container">
             <div class="row">
@@ -167,9 +168,11 @@
             </div>
         </div>
     </section>
+    -->
     <!-- end: news area -->
 
     <!-- begin: capabilities area -->
+
     <section id="capabilities" class="capabilities_section position-relative">
         <div class="container-fluid">
             <div class="text-center text-white">
@@ -274,6 +277,7 @@
                         <li data-filter=".webdev">Web Development</li>
                         <li data-filter=".ui-ux">UI / UX Design</li>
                         <li data-filter=".html-email">HTML Emails</li>
+                        <li data-filter=".webapp">Web App</li>
                     </h4>
                 </ul>
             </div>
@@ -284,11 +288,116 @@
 
                 <!-- =======***PORTFOLIO ITEM 01=======*** -->
                 <div class="portfolio_item">
-                    <div class="single-content webdesign graphics grid-item" data-bs-toggle="modal"
+                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img03">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img03">
+                            <img src="./assets/img/ruben-123-Portfolio-img/web_design/Art-District-Mansion.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img03" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web_design/Art-District-Mansion.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="https://artsdistrictmansion.org/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0 mx-4">Visit
+                                                Website</button></a>
+                                        <a href="https://xd.adobe.com/view/46975686-dff1-499a-ac91-a542f17ee0a4-13c4/?fullscreen"
+                                            target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View
+                                                Design
+                                                Prototype</button></a>
+                                    </div>
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        For this UI / UX design I used Adobe XD to create the wireframe, ui design, and
+                                        setting up the prototype.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 01***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 02=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign webdev html-email grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img02">
+                        <!-- Portfolio Item Image -->
+                        <a href="#img01">
+                            <img src="./assets/img/ruben-123-Portfolio-img/web_design/apple-watch_html-email_01.jpg" />
+                        </a>
+                    </div>
+
+                    <!-- =======***PORTFOLIO MODAL***======= -->
+                    <div class="modal fade" id="img02" tabindex="-1" aria-labelledby="imageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body text-center">
+                                    <!-- Portfolio Image in Modal -->
+                                    <img id="modalImage"
+                                        src="./assets/img/ruben-123-Portfolio-img/web_design/apple-watch_html-email_01.jpg"
+                                        alt="Modal Image" class="img-fluid mb-3">
+
+                                    <!-- button if need use this-->
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
+                                                Website</button></a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
+                                    </div>
+                                    <!-- Editable Section(You can update only text): Add details about the project -->
+                                    <h3>Project Title (Editable)</h3>
+                                    <p>
+                                        I still like working on freelance projects for both design and coding. So I
+                                        created these banners to sell etsy and I
+                                        design website banners for other companies as well so I created this design / ad
+                                        to promote my services with banners I
+                                        designed. So anyone who is visiting this website needs a website banner design
+                                        feel free to message me.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =======***END PORTFOLIO ITEM 02***======= -->
+
+                <!-- =======***PORTFOLIO ITEM 03=======*** -->
+                <div class="portfolio_item">
+                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
                         data-bs-target="#img01">
                         <!-- Portfolio Item Image -->
                         <a href="#img01">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/ruben123_Web-Design_01.jpg" />
+                            <img
+                                src="./assets/img/ruben-123-Portfolio-img/web_design/Aguilar-Concrete-Construction.jpg" />
                         </a>
                     </div>
 
@@ -306,15 +415,19 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/web-design/ruben123_Web-Design_01.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/web_design/Aguilar-Concrete-Construction.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
-                                                class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="https://artsdistrictmansion.org/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
-                                    </div> -->
+                                        <a href="https://xd.adobe.com/view/46975686-dff1-499a-ac91-a542f17ee0a4-13c4/?fullscreen"
+                                            target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View
+                                                Design Prototype</button></a>
+                                    </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
                                     <h3>Project Title (Editable)</h3>
                                     <p>
@@ -341,112 +454,15 @@
                         </div>
                     </div>
                 </div>
-                <!-- =======***END PORTFOLIO ITEM 01***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 02=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content webdesign graphics grid-item" data-bs-toggle="modal"
-                        data-bs-target="#img02">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img01">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/web-design/website_banner_header_500x500_01.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img02" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/web-design/website_banner_header_500x500_01.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
-                                                class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        I still like working on freelance projects for both design and coding. So I
-                                        created these banners to sell etsy and I
-                                        design website banners for other companies as well so I created this design / ad
-                                        to promote my services with banners I
-                                        designed. So anyone who is visiting this website needs a website banner design
-                                        feel free to message me.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 02***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 03=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content webdesign ui-ux grid-item" data-bs-toggle="modal"
-                        data-bs-target="#img03">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img03">
-                            <img src="./assets/img/ruben-123-Portfolio-img/ui-ux/cujo-cookies_ui-ux-design.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img03" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/ui-ux/cujo-cookies_ui-ux-design.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="http://ruben123.com/meta/" target="_blank" rel="noopener noreferrer"><button
-                                                class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        For this UI / UX design I used Adobe XD to create the wireframe, ui design, and
-                                        setting up the prototype.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- =======***END PORTFOLIO ITEM 03***======= -->
 
                 <!-- =======***PORTFOLIO ITEM 04=======*** -->
                 <div class="portfolio_item">
-                    <div class="single-content webdesign html-email grid-item" data-bs-toggle="modal"
+                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
                         data-bs-target="#img04">
                         <!-- Portfolio Item Image -->
                         <a href="#img04">
-                            <img src="./assets/img/ruben-123-Portfolio-img/html-emails/apple-watch_html-email_01.jpg" />
+                            <img src="./assets/img/ruben-123-Portfolio-img/web_design/Dining-at-The-Meyerson.jpg" />
                         </a>
                     </div>
 
@@ -464,14 +480,18 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/html-emails/apple-watch_html-email_01.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/web_design/Dining-at-The-Meyerson.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <div>
-                                        <a href="https://ruben123.com/apple-watch-email/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="https://diningatthemeyerson.com/" target="_blank"
+                                            rel="noopener noreferrer"><button class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
+                                        <a href="https://xd.adobe.com/view/566958cf-d2dd-4980-b3fd-759f35192735-033a/"
+                                            target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
                                     </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
                                     <h3>Project Title (Editable)</h3>
@@ -497,7 +517,7 @@
                         data-bs-target="#img05">
                         <!-- Portfolio Item Image -->
                         <a href="#img05">
-                            <img src="./assets/img/ruben-123-Portfolio-img/web-design/meta_500x500_Web-Design_01.jpg" />
+                            <img src="./assets/img/ruben-123-Portfolio-img/web_design/ML-Steaks-Sports-bar.jpg" />
                         </a>
                     </div>
 
@@ -515,14 +535,17 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/web-design/meta_500x500_Web-Design_01.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/web_design/ML-Steaks-Sports-bar.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <div>
-                                        <a href="http://ruben123.com/meta/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
                                     </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
                                     <h3>Project Title (Editable)</h3>
@@ -546,8 +569,7 @@
                         data-bs-target="#img06">
                         <!-- Portfolio Item Image -->
                         <a href="#img06">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/web-design/top-star-websites_1000x1000_Web-Design_02.jpg" />
+                            <img src="./assets/img/ruben-123-Portfolio-img/web_design/Park-Grill.jpg" />
                         </a>
                     </div>
 
@@ -565,14 +587,17 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/web-design/top-star-websites_1000x1000_Web-Design_02.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/web_design/Park-Grill.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <div>
-                                        <a href="https://topstarwebsites.com/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
                                     </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
                                     <h3>Project Title (Editable)</h3>
@@ -599,8 +624,7 @@
                         data-bs-target="#img07">
                         <!-- Portfolio Item Image -->
                         <a href="#img07">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/web-design/paw-lovers-pickup_1000x1000_Web-Design_02.jpg" />
+                            <img src="./assets/img/ruben-123-Portfolio-img/web_design/VIP-SWEEPSTAKES.jpg" />
                         </a>
                     </div>
 
@@ -618,14 +642,17 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/web-design/paw-lovers-pickup_1000x1000_Web-Design_02.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/web_design/VIP-SWEEPSTAKES.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
                                     </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
                                     <h3>Project Title (Editable)</h3>
@@ -645,11 +672,12 @@
 
                 <!-- =======***PORTFOLIO ITEM 08=======*** -->
                 <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img09">
+                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
+                        data-bs-target="#img09">
                         <!-- Portfolio Item Image -->
                         <a href="#img09">
                             <img
-                                src="./assets/img/ruben-123-Portfolio-img/web-design/pbt-king_1000x1000_Web-Design_02.jpg" />
+                                src="./assets/img/ruben-123-Portfolio-img/web_design/pbt-king_1000x1000_Web-Design_02.jpg" />
                         </a>
                     </div>
 
@@ -667,14 +695,17 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/web-design/pbt-king_1000x1000_Web-Design_02.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/web_design/pbt-king_1000x1000_Web-Design_02.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <div>
-                                        <a href="https://photoboothtemplateking.com/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
                                     </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
                                     <h3>Project Title (Editable)</h3>
@@ -699,12 +730,11 @@
 
                 <!-- =======***PORTFOLIO ITEM 09=======*** -->
                 <div class="portfolio_item">
-                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
-                        data-bs-target="#img08">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img08">
                         <!-- Portfolio Item Image -->
                         <a href="#img08">
                             <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Bob-Furniture-Car-Cover_02.jpg" />
+                                src="./assets/img/ruben-123-Portfolio-img/graphic_design/60th-birthday_Website-Button-Both.jpg" />
                         </a>
                     </div>
 
@@ -722,24 +752,27 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Bob-Furniture-Car-Cover_02.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic_design/60th-birthday_Website-Button-Both.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
-                                    </div> -->
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
+                                    </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <h3>Project Title (Editable)</h3>
                                     <p>
                                         This is a dog website I created for one of my customers. To be honest to save
                                         time I purchased a html / css website
                                         template from a market place to save time. I updated the image on the header and
                                         updated the icons and images. I also
                                         updated the code to make sure everything is mobile responsive.
-                                    </p> -->
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -753,7 +786,7 @@
                         <!-- Portfolio Item Image -->
                         <a href="#img10">
                             <img
-                                src="./assets/img/ruben-123-Portfolio-img/web-design/quality-improvements_1000x1000_Web-Design_02.jpg" />
+                                src="./assets/img/ruben-123-Portfolio-img/graphic_design/Bob-Furniture-Car-Cover_02.jpg" />
                         </a>
                     </div>
 
@@ -771,14 +804,17 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/web-design/quality-improvements_1000x1000_Web-Design_02.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic_design/car_web_banners_ad_designs_Web-Design_01.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <div>
-                                        <a href="http://qualitymulching.com/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
                                     </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
                                     <h3>Project Title (Editable)</h3>
@@ -799,11 +835,11 @@
 
                 <!-- =======***PORTFOLIO ITEM 11=======*** -->
                 <div class="portfolio_item">
-                    <div class="single-content webdev grid-item" data-bs-toggle="modal" data-bs-target="#img12">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img12">
                         <!-- Portfolio Item Image -->
                         <a href="#img11">
                             <img
-                                src="./assets/img/ruben-123-Portfolio-img/web-design/car_web_banners_designs_Web-Design_01.jpg" />
+                                src="./assets/img/ruben-123-Portfolio-img/graphic_design/Christmas-Ginger-bread_Website-Button-Both.jpg" />
                         </a>
                     </div>
 
@@ -821,15 +857,18 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/web-design/car_web_banners_designs_Web-Design_01.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic_design/Christmas-Ginger-bread_Website-Button-Both.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
-                                    </div> -->
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
+                                    </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
                                     <h3>Project Title (Editable)</h3>
                                     <p>
@@ -846,11 +885,11 @@
 
                 <!-- =======***PORTFOLIO ITEM 12=======*** -->
                 <div class="portfolio_item">
-                    <div class="single-content webdesign grid-item" data-bs-toggle="modal" data-bs-target="#img12">
+                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img12">
                         <!-- Portfolio Item Image -->
                         <a href="#img12">
                             <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco_01.jpg" />
+                                src="./assets/img/ruben-123-Portfolio-img/graphic_design/ML_Steaks_main_menu_front-17x11_bleed-01 copy 2.jpg" />
                         </a>
                     </div>
 
@@ -868,24 +907,27 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco_01.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic_design/ML_Steaks_main_menu_front-17x11_bleed-01 copy 2.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
-                                    </div> -->
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
+                                    </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <h3>Project Title (Editable)</h3>
                                     <p>
                                         This is a dog website I created for one of my customers. To be honest to save
                                         time I purchased a html / css website
                                         template from a market place to save time. I updated the image on the header and
                                         updated the icons and images. I also
                                         updated the code to make sure everything is mobile responsive.
-                                    </p> -->
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -898,8 +940,7 @@
                     <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img13">
                         <!-- Portfolio Item Image -->
                         <a href="#img13">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco-AFTER_02.jpg" />
+                            <img src="./assets/img/ruben-123-Portfolio-img/graphic_design/STA-TENT_02.jpg" />
                         </a>
                     </div>
 
@@ -917,24 +958,27 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/del-taco-AFTER_02.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic_design/STA-TENT_02.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
-                                    </div> -->
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
+                                    </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <h3>Project Title (Editable)</h3>
                                     <p>
                                         This is a dog website I created for one of my customers. To be honest to save
                                         time I purchased a html / css website
                                         template from a market place to save time. I updated the image on the header and
                                         updated the icons and images. I also
                                         updated the code to make sure everything is mobile responsive.
-                                    </p> -->
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -948,7 +992,7 @@
                         <!-- Portfolio Item Image -->
                         <a href="#img14">
                             <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/farmer-boys-full-size-flags_01.jpg" />
+                                src="./assets/img/ruben-123-Portfolio-img/graphic_design/The_Cafe_Carnegie_Ad_Pitt_Lectures_2022_02.jpg" />
                         </a>
                     </div>
 
@@ -966,24 +1010,27 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/farmer-boys-full-size-flags_01.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic_design/The_Cafe_Carnegie_Ad_Pitt_Lectures_2022_02.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
-                                    </div> -->
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
+                                    </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <h3>Project Title (Editable)</h3>
                                     <p>
                                         This is a dog website I created for one of my customers. To be honest to save
                                         time I purchased a html / css website
                                         template from a market place to save time. I updated the image on the header and
                                         updated the icons and images. I also
                                         updated the code to make sure everything is mobile responsive.
-                                    </p> -->
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -997,7 +1044,7 @@
                         <!-- Portfolio Item Image -->
                         <a href="#img15">
                             <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/FARMER-BOYS_PRODUCT-SHEET_02.jpg" />
+                                src="./assets/img/ruben-123-Portfolio-img/graphic_design/ufc-fitness-center-full-size-flags_01.jpg" />
                         </a>
                     </div>
 
@@ -1015,24 +1062,27 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/FARMER-BOYS_PRODUCT-SHEET_02.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic_design/ufc-fitness-center-full-size-flags_01.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
-                                    </div> -->
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
+                                    </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <h3>Project Title (Editable)</h3>
                                     <p>
                                         This is a dog website I created for one of my customers. To be honest to save
                                         time I purchased a html / css website
                                         template from a market place to save time. I updated the image on the header and
                                         updated the icons and images. I also
                                         updated the code to make sure everything is mobile responsive.
-                                    </p> -->
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1046,7 +1096,7 @@
                         <!-- Portfolio Item Image -->
                         <a href="#img16">
                             <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/meineke-store-before-after-portfolio-image.jpg" />
+                                src="./assets/img/ruben-123-Portfolio-img/graphic_design/website_banner_header_desktop_mobile-fiverr_thumbnail_button_01.jpg" />
                         </a>
                     </div>
 
@@ -1064,24 +1114,27 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/meineke-store-before-after-portfolio-image.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic_design/website_banner_header_desktop_mobile-fiverr_thumbnail_button_01.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
-                                    </div> -->
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
+                                    </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <h3>Project Title (Editable)</h3>
                                     <p>
                                         This is a dog website I created for one of my customers. To be honest to save
                                         time I purchased a html / css website
                                         template from a market place to save time. I updated the image on the header and
                                         updated the icons and images. I also
                                         updated the code to make sure everything is mobile responsive.
-                                    </p> -->
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1095,7 +1148,7 @@
                         <!-- Portfolio Item Image -->
                         <a href="#img17">
                             <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-retouching/combine-photos_2048x2048_button_03.jpg" />
+                                src="./assets/img/ruben-123-Portfolio-img/graphic_design/car_web_banners_ad_designs_Web-Design_01.jpg" />
                         </a>
                     </div>
 
@@ -1113,24 +1166,27 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-retouching/combine-photos_2048x2048_button_03.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic_design/car_web_banners_ad_designs_Web-Design_01.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
-                                    </div> -->
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
+                                    </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <h3>Project Title (Editable)</h3>
                                     <p>
                                         This is a dog website I created for one of my customers. To be honest to save
                                         time I purchased a html / css website
                                         template from a market place to save time. I updated the image on the header and
                                         updated the icons and images. I also
                                         updated the code to make sure everything is mobile responsive.
-                                    </p> -->
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1144,7 +1200,7 @@
                         <!-- Portfolio Item Image -->
                         <a href="#img18">
                             <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/quiznos-full-size-flags-AFTER_02.jpg" />
+                                src="./assets/img/ruben-123-Portfolio-img/graphic_design/ruben123_Web-Design_010001.jpg" />
                         </a>
                     </div>
 
@@ -1162,38 +1218,40 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/quiznos-full-size-flags-AFTER_02.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/graphic_design/ruben123_Web-Design_010001.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
-                                    </div> -->
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
+                                    </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <h3>Project Title (Editable)</h3>
                                     <p>
                                         This is a dog website I created for one of my customers. To be honest to save
                                         time I purchased a html / css website
                                         template from a market place to save time. I updated the image on the header and
                                         updated the icons and images. I also
                                         updated the code to make sure everything is mobile responsive.
-                                    </p> -->
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- =======***END PORTFOLIO ITEM 18***======= -->
-
                 <!-- =======***PORTFOLIO ITEM 19=======*** -->
                 <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img19">
+                    <div class="single-content ui-ux webapp grid-item" data-bs-toggle="modal" data-bs-target="#img19">
                         <!-- Portfolio Item Image -->
                         <a href="#img19">
                             <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/RACE-CAR-01.jpg" />
+                                src="./assets/img/ruben-123-Portfolio-img/ui _ ux_&_web_app/Event-Trackit-Prototype.jpg" />
                         </a>
                     </div>
 
@@ -1211,670 +1269,33 @@
                                 <div class="modal-body text-center">
                                     <!-- Portfolio Image in Modal -->
                                     <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/RACE-CAR-01.jpg"
+                                        src="./assets/img/ruben-123-Portfolio-img/ui _ ux_&_web_app/Event-Trackit-Prototype.jpg"
                                         alt="Modal Image" class="img-fluid mb-3">
 
                                     <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
+                                    <div class="d-flex align-items-center justify-content-center g-2">
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0 mx-4">Visit
                                                 Website</button></a>
-                                    </div> -->
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><button
+                                                class="common_btn border-0">View Design
+                                                Prototype</button></a>
+                                    </div>
                                     <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
+                                    <h3>Project Title (Editable)</h3>
                                     <p>
                                         This is a dog website I created for one of my customers. To be honest to save
                                         time I purchased a html / css website
                                         template from a market place to save time. I updated the image on the header and
                                         updated the icons and images. I also
                                         updated the code to make sure everything is mobile responsive.
-                                    </p> -->
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- =======***END PORTFOLIO ITEM 19***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 20=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img20">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img20">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/STA-TENT_02.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img20" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/STA-TENT_02.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        This is a dog website I created for one of my customers. To be honest to save
-                                        time I purchased a html / css website
-                                        template from a market place to save time. I updated the image on the header and
-                                        updated the icons and images. I also
-                                        updated the code to make sure everything is mobile responsive.
-                                    </p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 20***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 21=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img21">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img21">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Taco-Cabana-Cup-Inflatable_02.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img21" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/Taco-Cabana-Cup-Inflatable_02.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        This is a dog website I created for one of my customers. To be honest to save
-                                        time I purchased a html / css website
-                                        template from a market place to save time. I updated the image on the header and
-                                        updated the icons and images. I also
-                                        updated the code to make sure everything is mobile responsive.
-                                    </p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 21***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 22=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img22">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img22">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/ufc-fitness-center-full-size-flags_01.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img22" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/outdoor-advertisment/ufc-fitness-center-full-size-flags_01.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        This is a dog website I created for one of my customers. To be honest to save
-                                        time I purchased a html / css website
-                                        template from a market place to save time. I updated the image on the header and
-                                        updated the icons and images. I also
-                                        updated the code to make sure everything is mobile responsive.
-                                    </p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 22***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 23=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img23">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img23">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/360-ALARM_LOGO_01.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img23" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/360-ALARM_LOGO_01.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        This is a dog website I created for one of my customers. To be honest to save
-                                        time I purchased a html / css website
-                                        template from a market place to save time. I updated the image on the header and
-                                        updated the icons and images. I also
-                                        updated the code to make sure everything is mobile responsive.
-                                    </p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 23***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 24=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img24">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img24">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/green-life-logo-portfolio-image.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img24" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/green-life-logo-portfolio-image.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        This is a dog website I created for one of my customers. To be honest to save
-                                        time I purchased a html / css website
-                                        template from a market place to save time. I updated the image on the header and
-                                        updated the icons and images. I also
-                                        updated the code to make sure everything is mobile responsive.
-                                    </p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 24***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 25=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img25">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img25">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Photo-Booth-Template-King-Logo-BEFORE-AFTER.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img25" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Photo-Booth-Template-King-Logo-BEFORE-AFTER.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        This is a dog website I created for one of my customers. To be honest to save
-                                        time I purchased a html / css website
-                                        template from a market place to save time. I updated the image on the header and
-                                        updated the icons and images. I also
-                                        updated the code to make sure everything is mobile responsive.
-                                    </p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 25***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 26=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img26">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img26">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/photo-template-360-portfolio-image.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img26" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/photo-template-360-portfolio-image.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        This is a dog website I created for one of my customers. To be honest to save
-                                        time I purchased a html / css website
-                                        template from a market place to save time. I updated the image on the header and
-                                        updated the icons and images. I also
-                                        updated the code to make sure everything is mobile responsive.
-                                    </p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 26***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 27=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img27">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img27">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Skid_Steer-Services_02.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img27" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/logos/Skid_Steer-Services_02.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        This is a dog website I created for one of my customers. To be honest to save
-                                        time I purchased a html / css website
-                                        template from a market place to save time. I updated the image on the header and
-                                        updated the icons and images. I also
-                                        updated the code to make sure everything is mobile responsive.
-                                    </p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 27***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 28=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img28">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img28">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/60th-birthday_Website-Button-Both.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img28" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/60th-birthday_Website-Button-Both.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        This is a dog website I created for one of my customers. To be honest to save
-                                        time I purchased a html / css website
-                                        template from a market place to save time. I updated the image on the header and
-                                        updated the icons and images. I also
-                                        updated the code to make sure everything is mobile responsive.
-                                    </p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 28***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 29=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img29">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img29">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Aaliyah-18-Birthday_Website-Button-Both.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img29" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Aaliyah-18-Birthday_Website-Button-Both.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        This is a dog website I created for one of my customers. To be honest to save
-                                        time I purchased a html / css website
-                                        template from a market place to save time. I updated the image on the header and
-                                        updated the icons and images. I also
-                                        updated the code to make sure everything is mobile responsive.
-                                    </p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 29***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 30=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content graphics grid-item" data-bs-toggle="modal" data-bs-target="#img30">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img30">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Christmas-Ginger-bread_Website-Button-Both.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img30" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/graphic-design/photo-booth-templates/Christmas-Ginger-bread_Website-Button-Both.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <!-- <div>
-                                        <a href="https://pawloverspickup.netlify.app/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div> -->
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <!-- <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        This is a dog website I created for one of my customers. To be honest to save
-                                        time I purchased a html / css website
-                                        template from a market place to save time. I updated the image on the header and
-                                        updated the icons and images. I also
-                                        updated the code to make sure everything is mobile responsive.
-                                    </p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 30***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 31=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
-                        data-bs-target="#img31">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img31">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/web-design/RED-CARPET_1000x1000_Web-Design_02.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img31" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/web-design/RED-CARPET_1000x1000_Web-Design_02.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <div>
-                                        <a href="http://lonestarwebandgraphics.com/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div>
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        For this website I created the ui / web design in photoshop. Once I was done
-                                        with the design I converted
-                                        the psd into pixel perfect website using html css & javascript. This was the
-                                        first website I coded from
-                                        scratch without using any themes. Unfortunately the customer never got around to
-                                        updating his hosting so I
-                                        uploaded this website on a personal domain for now.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 31***======= -->
-
-                <!-- =======***PORTFOLIO ITEM 32=======*** -->
-                <div class="portfolio_item">
-                    <div class="single-content webdesign webdev grid-item" data-bs-toggle="modal"
-                        data-bs-target="#img32">
-                        <!-- Portfolio Item Image -->
-                        <a href="#img32">
-                            <img
-                                src="./assets/img/ruben-123-Portfolio-img/web-design/ruben-portfolio_1000x1000_Web-Design_02.jpg" />
-                        </a>
-                    </div>
-
-                    <!-- =======***PORTFOLIO MODAL***======= -->
-                    <div class="modal fade" id="img32" tabindex="-1" aria-labelledby="imageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body text-center">
-                                    <!-- Portfolio Image in Modal -->
-                                    <img id="modalImage"
-                                        src="./assets/img/ruben-123-Portfolio-img/web-design/ruben-portfolio_1000x1000_Web-Design_02.jpg"
-                                        alt="Modal Image" class="img-fluid mb-3">
-
-                                    <!-- button if need use this-->
-                                    <div>
-                                        <a href="http://lonestarwebandgraphics.com/" target="_blank"
-                                            rel="noopener noreferrer"><button class="common_btn border-0">Visit
-                                                Website</button></a>
-                                    </div>
-                                    <!-- Editable Section(You can update only text): Add details about the project -->
-                                    <h3>Project Title (Editable)</h3>
-                                    <p>
-                                        For this website I designed the ui / web deisgn in Photoshop. Once I was done
-                                        designing the website I
-                                        converted the psd into a website with html css javascript and a jquery librairy
-                                        for portfolio filter.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =======***END PORTFOLIO ITEM 32***======= -->
 
 
             </div>

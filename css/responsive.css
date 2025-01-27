@@ -58,4 +58,8 @@
     width: auto;
     margin: 12px;
   }
+  .common_btn {
+    padding: 10px 11px;
+    font-size: 15px;
+  }
 }
